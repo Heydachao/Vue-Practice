@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="app">
+			<!--<form action="demo.html" @submit.prevent="submitForm">-->
+				
+				<button type="submit" @click="count += 1;">Submit {{ count }} </button>
+			<!--</form>-->
+		</div>
+		
+		<script src="vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			new Vue({
+				el: '#app',
+				data:{
+					count: 0
+				},
+				methods:{
+//					submitForm:function(){
+//						alert('Submit');
+//						e.preventDefault();
+					
+//					}
+					updateCount : function(){
+//						this.count += 1;
+					},
+					doSomething:function(){
+						
+					}
+				}
+				
+			})
+		</script>
+		
+	</body>
+</html>

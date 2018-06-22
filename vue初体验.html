@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue初体验</title>
+
+    <script src="vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el:'#box',
+            data:{
+                msg:'Holle World!',
+                msg2:123456,
+                msg3:['apple','banana','orange'],
+                msg4:'a',
+                msg5:''
+            }
+        });
+    </script>  
+</head>
+<body>
+	
+    <div id="box">
+        <input type="text" v-model="msg" ><br><br>
+        <input type="text" v-model="msg2" ><br><br>
+        <input type="text" v-model="msg3" ><br><br>
+        <input type="text" v-model="msg4" ><br><br>
+        <input type="text" v-model="msg5" >
+
+        <br>
+
+        <p>{{msg}}</p>
+
+        <br>
+
+        <p>{{msg2}}</p>
+
+        <br>
+
+        <p>{{msg3}}</p>
+
+        <br>
+
+        <p>{{*msg4}}</p>
+
+        <br>
+
+        <p>{{{msg5}}}</p>
+
+    </div>
+</body>
+</html>

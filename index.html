@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue demo2</title>
+		
+		<script src="vue.js"></script>
+	    <script type="text/javascript">
+	        window.onload=function () {
+	           new Vue({
+					el: '#app',
+					data:{
+						template:'hello world2'
+					}
+				});
+	        };
+	</head>
+	<body>
+		
+		<div id="app">{{ template }}</div>
+		<h1 v-show="">Hello!</h1>
+	</body>
+</html>
